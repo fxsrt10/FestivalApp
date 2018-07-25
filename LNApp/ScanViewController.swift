@@ -9,7 +9,46 @@
 import UIKit
 
 class ScanViewController: UIViewController {
+    
+    let alert = UIAlertController(title: "AlertController Tutorial",
+                                  message: "Submit something",
+                                  preferredStyle: .alert)
 
+    @IBAction func verifyAction(_ sender: Any) {
+        // 1.
+        var usernameTextField: UITextField?
+        var passwordTextField: UITextField?
+        
+        // 2.
+        let alertController = UIAlertController(
+            title: "Finish Purchase",
+            message: "Verify Band Code",
+            preferredStyle: UIAlertControllerStyle.alert)
+        
+        // 3.
+        let loginAction = UIAlertAction(
+        title: "Verify", style: UIAlertActionStyle.default) {
+            (action) -> Void in
+            if let password = passwordTextField?.text {
+                print("Password = \(password)")
+            } else {
+                print("No password entered")
+            }
+        }
+        
+        // 4.
+
+        alertController.addTextField {
+            (txtPassword) -> Void in
+            passwordTextField = txtPassword
+            passwordTextField?.isSecureTextEntry = true
+            passwordTextField!.placeholder = "enter here"
+        }
+        
+        // 5.
+        alertController.addAction(loginAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

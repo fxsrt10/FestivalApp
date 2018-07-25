@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704A601684885962F9D21B25 /* Pods_LNApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713EAE2EF23760AD0014CE6 /* Pods_LNApp.framework */; };
 		7A9F6C102107C8430094AAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C0F2107C8430094AAE8 /* AppDelegate.swift */; };
 		7A9F6C122107C8430094AAE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C112107C8430094AAE8 /* ViewController.swift */; };
 		7A9F6C152107C8430094AAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C132107C8430094AAE8 /* Main.storyboard */; };
 		7A9F6C172107C8440094AAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C162107C8440094AAE8 /* Assets.xcassets */; };
 		7A9F6C1A2107C8440094AAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C182107C8440094AAE8 /* LaunchScreen.storyboard */; };
+		7A9F6C242108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C212108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg */; };
+		7A9F6C252108FC890094AAE8 /* catalog_detail_image_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C222108FC890094AAE8 /* catalog_detail_image_large.jpg */; };
+		7A9F6C262108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C232108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg */; };
+		7A9F6C282108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C272108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift */; };
+		7A9F6C2A2109037C0094AAE8 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C292109037C0094AAE8 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2713EAE2EF23760AD0014CE6 /* Pods_LNApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF8DF3612E98ADE161515E6 /* Pods-LNApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNApp/Pods-LNApp.release.xcconfig"; sourceTree = "<group>"; };
 		7A9F6C0C2107C8430094AAE8 /* LNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9F6C0F2107C8430094AAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A9F6C112107C8430094AAE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,12 @@
 		7A9F6C162107C8440094AAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A9F6C192107C8440094AAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A9F6C1B2107C8440094AAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A9F6C212108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tyndell_Double_Horizontal_CD-DVD_Album.jpg"; sourceTree = "<group>"; };
+		7A9F6C222108FC890094AAE8 /* catalog_detail_image_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = catalog_detail_image_large.jpg; sourceTree = "<group>"; };
+		7A9F6C232108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mute_t-5640dc4d687be-584x584.jpg"; sourceTree = "<group>"; };
+		7A9F6C272108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		7A9F6C292109037C0094AAE8 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		FB550E9DB920C1AEA1A47BC8 /* Pods-LNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNApp/Pods-LNApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704A601684885962F9D21B25 /* Pods_LNApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053E074EDCC07A2FC8FCE74E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB550E9DB920C1AEA1A47BC8 /* Pods-LNApp.debug.xcconfig */,
+				2CF8DF3612E98ADE161515E6 /* Pods-LNApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7A9F6C032107C8430094AAE8 = {
 			isa = PBXGroup;
 			children = (
 				7A9F6C0E2107C8430094AAE8 /* LNApp */,
 				7A9F6C0D2107C8430094AAE8 /* Products */,
+				053E074EDCC07A2FC8FCE74E /* Pods */,
+				B45AE188135DE2D65220A742 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +82,25 @@
 			children = (
 				7A9F6C0F2107C8430094AAE8 /* AppDelegate.swift */,
 				7A9F6C112107C8430094AAE8 /* ViewController.swift */,
+				7A9F6C272108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift */,
 				7A9F6C132107C8430094AAE8 /* Main.storyboard */,
 				7A9F6C162107C8440094AAE8 /* Assets.xcassets */,
 				7A9F6C182107C8440094AAE8 /* LaunchScreen.storyboard */,
 				7A9F6C1B2107C8440094AAE8 /* Info.plist */,
+				7A9F6C222108FC890094AAE8 /* catalog_detail_image_large.jpg */,
+				7A9F6C232108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg */,
+				7A9F6C212108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg */,
+				7A9F6C292109037C0094AAE8 /* ScanViewController.swift */,
 			);
 			path = LNApp;
+			sourceTree = "<group>";
+		};
+		B45AE188135DE2D65220A742 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2713EAE2EF23760AD0014CE6 /* Pods_LNApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A9F6C1E2107C8440094AAE8 /* Build configuration list for PBXNativeTarget "LNApp" */;
 			buildPhases = (
+				F2DC9B37A09ABF30A351163E /* [CP] Check Pods Manifest.lock */,
 				7A9F6C082107C8430094AAE8 /* Sources */,
 				7A9F6C092107C8430094AAE8 /* Frameworks */,
 				7A9F6C0A2107C8430094AAE8 /* Resources */,
+				FCA945BC6EA35D1EC9E5ADDC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,13 +163,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9F6C262108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg in Resources */,
 				7A9F6C1A2107C8440094AAE8 /* LaunchScreen.storyboard in Resources */,
+				7A9F6C242108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg in Resources */,
 				7A9F6C172107C8440094AAE8 /* Assets.xcassets in Resources */,
+				7A9F6C252108FC890094AAE8 /* catalog_detail_image_large.jpg in Resources */,
 				7A9F6C152107C8430094AAE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F2DC9B37A09ABF30A351163E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LNApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCA945BC6EA35D1EC9E5ADDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LNApp/Pods-LNApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNApp/Pods-LNApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A9F6C082107C8430094AAE8 /* Sources */ = {
@@ -136,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9F6C122107C8430094AAE8 /* ViewController.swift in Sources */,
+				7A9F6C282108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift in Sources */,
 				7A9F6C102107C8430094AAE8 /* AppDelegate.swift in Sources */,
+				7A9F6C2A2109037C0094AAE8 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +363,7 @@
 		};
 		7A9F6C1F2107C8440094AAE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB550E9DB920C1AEA1A47BC8 /* Pods-LNApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +382,7 @@
 		};
 		7A9F6C202107C8440094AAE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF8DF3612E98ADE161515E6 /* Pods-LNApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
