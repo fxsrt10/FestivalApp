@@ -9,12 +9,14 @@
 import UIKit
 
 class ScanViewController: UIViewController {
+    @IBOutlet weak var rfidField: UITextField!
     
     let alert = UIAlertController(title: "AlertController Tutorial",
                                   message: "Submit something",
                                   preferredStyle: .alert)
 
     @IBAction func verifyAction(_ sender: Any) {
+        getUser(rfid : rfidField.text!)
         // 1.
         var usernameTextField: UITextField?
         var passwordTextField: UITextField?
@@ -58,6 +60,48 @@ class ScanViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getUser(rfid:String) {
+        var endpoint = "http://129.213.100.224:8000/orders/" + rfid ;
+        
+        guard let url = URL(string: endpoint) else {
+            print("Error: cannot create URL")
+            return
+        }
+        let urlRequest = URLRequest(url: url)
+        let session = URLSession.shared
+        let task = session.dataTask(with: urlRequest, completionHandler: {
+            (data, response, error) in
+            // handle response to request
+            // check for error
+            guard error == nil else {
+                print("Error");
+                return
+            }
+            // make sure we got data in the response
+            guard let responseData = data else {
+                print("Error: did not receive data")
+                return
+            }
+            
+            // parse the result as JSON
+            // then create a Todo from the JSON
+            do {
+                if let todoJSON = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any]{
+                    // created a TODO object
+                    print(todoJSON)
+                } else {
+                    // couldn't create a todo object from the JSON
+                    print("Couldnt make an object")
+                }
+            } catch {
+                // error trying to convert the data to JSON using JSONSerialization.jsonObject
+                print("Couldnt make an object from JSON to JSONSerial")
+                return
+            }
+        })
+        task.resume()
     }
     
 

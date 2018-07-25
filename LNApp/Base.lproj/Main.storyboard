@@ -258,6 +258,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4rN-Bb-mjK"/>
                     </view>
+                    <connections>
+                        <outlet property="rfidField" destination="jYr-0r-bme" id="OXK-y1-R4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGF-ev-Ua0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
