@@ -16,7 +16,7 @@ class ScanViewController: UIViewController {
                                   preferredStyle: .alert)
 
     @IBAction func verifyAction(_ sender: Any) {
-        getUser(rfid : rfidField.text!)
+        let code = getUser(rfid : rfidField.text!)
         // 1.
         var usernameTextField: UITextField?
         var passwordTextField: UITextField?
@@ -33,9 +33,13 @@ class ScanViewController: UIViewController {
             (action) -> Void in
             if let password = passwordTextField?.text {
                 print("Password = \(password)")
+                if(password == code) {
+                    print("boughtShit")
+                }
             } else {
                 print("No password entered")
             }
+            
         }
         
         // 4.
@@ -62,12 +66,12 @@ class ScanViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getUser(rfid:String) {
-        var endpoint = "http://129.213.100.224:8000/orders/" + rfid ;
-        
+    func getUser(rfid:String) -> String{
+        var endpoint = "http://129.213.100.224:8000/auth/" + rfid ;
+        var codeToCheck:String = ""
         guard let url = URL(string: endpoint) else {
             print("Error: cannot create URL")
-            return
+            return "Error"
         }
         let urlRequest = URLRequest(url: url)
         let session = URLSession.shared
@@ -75,6 +79,8 @@ class ScanViewController: UIViewController {
             (data, response, error) in
             // handle response to request
             // check for error
+            
+            
             guard error == nil else {
                 print("Error");
                 return
@@ -84,6 +90,21 @@ class ScanViewController: UIViewController {
                 print("Error: did not receive data")
                 return
             }
+            
+            do {
+                //here dataResponse received from a network request
+                let decoder = JSONDecoder()
+                let model = try decoder.decode(User.self, from:
+                    responseData) //Decode JSON Response Data
+                print(model)
+                codeToCheck = model.code
+                return
+                print("done")
+            } catch let parsingError {
+                print("Error")
+                print("Error", parsingError)
+            }
+            
             
             // parse the result as JSON
             // then create a Todo from the JSON
@@ -102,6 +123,7 @@ class ScanViewController: UIViewController {
             }
         })
         task.resume()
+    return o
     }
     
 
