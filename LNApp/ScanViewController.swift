@@ -123,7 +123,7 @@ class ScanViewController: UIViewController {
             }
         })
         task.resume()
-    return o
+    return codeToCheck
     }
     
 
