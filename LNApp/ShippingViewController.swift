@@ -9,6 +9,8 @@
 import UIKit
 
 class ShippingViewController: UIViewController {
+    
+    public var tableData:[String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,14 @@ class ShippingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue , sender: Any?) {
+        if segue.identifier == "toReceiptShipped"
+        {
+            if let destinationVC = segue.destination as? ReceiptViewController {
+                destinationVC.tableData = tableData
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

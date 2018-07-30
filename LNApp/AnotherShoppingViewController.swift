@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ShoppingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AnotherShoppingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var invoiceTable: UITableView!
     
@@ -20,6 +21,18 @@ class ShoppingViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         invoiceTable.dataSource = self
         
+        images = [#imageLiteral(resourceName: "ACLshirt"), #imageLiteral(resourceName: "ACLvinyl"), #imageLiteral(resourceName: "ACLhoodie"), #imageLiteral(resourceName: "ACLposter")]
+        
+        for i in 0..<images.count {
+            let imageView = UIImageView()
+            let x = self.view.frame.size.width * CGFloat(i)
+            imageView.frame = CGRect(x: x, y: 0, width: self.view.frame.width/2, height: self.view.frame.height/2)
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = images[i]
+            
+            scrollView.contentSize.width = scrollView.frame.size.width * CGFloat(i + 1)
+            scrollView.addSubview(imageView)
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -38,32 +51,38 @@ class ShoppingViewController: UIViewController, UITableViewDelegate, UITableView
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func addCDAction(_ sender: Any) {
+    @IBAction func addCDAction(_ sender: Any?) {
         table1Data.append("CD")
         reloadTable()
     }
     
-    @IBAction func addHoodieAction(_ sender: Any) {
+    @IBAction func addHoodieAction(_ sender: Any?) {
         table1Data.append("Hoodies")
         reloadTable()
     }
     
-    @IBAction func addShirtAction(_ sender: Any) {
+    @IBAction func addShirtAction(_ sender: Any?) {
         table1Data.append("Shirts")
         reloadTable()
     }
     
-    @IBAction func addPosterAction(_ sender: Any) {
+    @IBAction func addPosterAction(_ sender: Any?) {
         table1Data.append("Poster")
         reloadTable()
     }
-    
-    override func prepare(for segue: UIStoryboardSegue , sender: Any?) {
-        if segue.identifier == "toShippingMethod"
-        {
-            if let destinationVC = segue.destination as? ShippingViewController {
-                destinationVC.tableData = table1Data
-            }
+    @IBAction func addToCart(_ sender: Any) {
+        let index = self.scrollView.contentOffset.x / self.scrollView.frame.size.width;
+        switch index {
+        case 0:
+            self.addCDAction(nil)
+        case 1:
+            self.addHoodieAction(nil)
+        case 2:
+            self.addShirtAction(nil)
+        case 3:
+            self.addPosterAction(nil)
+        default:
+            print("Invalid Index")
         }
     }
     

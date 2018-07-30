@@ -16,7 +16,6 @@
 		7A9F6C242108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C212108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg */; };
 		7A9F6C252108FC890094AAE8 /* catalog_detail_image_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C222108FC890094AAE8 /* catalog_detail_image_large.jpg */; };
 		7A9F6C262108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C232108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg */; };
-		7A9F6C282108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C272108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift */; };
 		7A9F6C2A2109037C0094AAE8 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C292109037C0094AAE8 /* ScanViewController.swift */; };
 		7A9F6C2C21092A140094AAE8 /* stock-vector-vector-musical-flyer-jazz-festival-music-poster-background-festival-brochure-flyer-template-414289705.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C2B21092A140094AAE8 /* stock-vector-vector-musical-flyer-jazz-festival-music-poster-background-festival-brochure-flyer-template-414289705.jpg */; };
 		7A9F6C30210A46030094AAE8 /* logoTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9F6C2F210A46020094AAE8 /* logoTransparent.png */; };
@@ -25,6 +24,9 @@
 		7A9F6C36210A50AE0094AAE8 /* InvoiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C35210A50AE0094AAE8 /* InvoiceTableViewController.swift */; };
 		7A9F6C38210A698E0094AAE8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C37210A698E0094AAE8 /* ProductTableViewCell.swift */; };
 		7A9F6C3A210BA8C40094AAE8 /* codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C39210BA8C40094AAE8 /* codable.swift */; };
+		94A57F30210F996C00A3CED6 /* AnotherShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A57F2F210F996C00A3CED6 /* AnotherShoppingViewController.swift */; };
+		94A57F32210FB30900A3CED6 /* ShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A57F31210FB30900A3CED6 /* ShippingViewController.swift */; };
+		94A57F34210FB73400A3CED6 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A57F33210FB73400A3CED6 /* ReceiptViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +42,6 @@
 		7A9F6C212108FC890094AAE8 /* Tyndell_Double_Horizontal_CD-DVD_Album.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tyndell_Double_Horizontal_CD-DVD_Album.jpg"; sourceTree = "<group>"; };
 		7A9F6C222108FC890094AAE8 /* catalog_detail_image_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = catalog_detail_image_large.jpg; sourceTree = "<group>"; };
 		7A9F6C232108FC890094AAE8 /* mute_t-5640dc4d687be-584x584.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mute_t-5640dc4d687be-584x584.jpg"; sourceTree = "<group>"; };
-		7A9F6C272108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
 		7A9F6C292109037C0094AAE8 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		7A9F6C2B21092A140094AAE8 /* stock-vector-vector-musical-flyer-jazz-festival-music-poster-background-festival-brochure-flyer-template-414289705.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stock-vector-vector-musical-flyer-jazz-festival-music-poster-background-festival-brochure-flyer-template-414289705.jpg"; sourceTree = "<group>"; };
 		7A9F6C2F210A46020094AAE8 /* logoTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTransparent.png; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		7A9F6C35210A50AE0094AAE8 /* InvoiceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTableViewController.swift; sourceTree = "<group>"; };
 		7A9F6C37210A698E0094AAE8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		7A9F6C39210BA8C40094AAE8 /* codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = codable.swift; sourceTree = "<group>"; };
+		94A57F2F210F996C00A3CED6 /* AnotherShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherShoppingViewController.swift; sourceTree = "<group>"; };
+		94A57F31210FB30900A3CED6 /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
+		94A57F33210FB73400A3CED6 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		FB550E9DB920C1AEA1A47BC8 /* Pods-LNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNApp/Pods-LNApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,10 +98,11 @@
 		7A9F6C0E2107C8430094AAE8 /* LNApp */ = {
 			isa = PBXGroup;
 			children = (
+				94A57F2F210F996C00A3CED6 /* AnotherShoppingViewController.swift */,
+				94A57F2A210F8FCA00A3CED6 /* Images */,
 				7A9F6C39210BA8C40094AAE8 /* codable.swift */,
 				7A9F6C0F2107C8430094AAE8 /* AppDelegate.swift */,
 				7A9F6C112107C8430094AAE8 /* ViewController.swift */,
-				7A9F6C272108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift */,
 				7A9F6C132107C8430094AAE8 /* Main.storyboard */,
 				7A9F6C2F210A46020094AAE8 /* logoTransparent.png */,
 				7A9F6C31210A46500094AAE8 /* fastcompany.png */,
@@ -112,8 +117,17 @@
 				7A9F6C33210A4FBD0094AAE8 /* ShoppingViewController.swift */,
 				7A9F6C35210A50AE0094AAE8 /* InvoiceTableViewController.swift */,
 				7A9F6C37210A698E0094AAE8 /* ProductTableViewCell.swift */,
+				94A57F31210FB30900A3CED6 /* ShippingViewController.swift */,
+				94A57F33210FB73400A3CED6 /* ReceiptViewController.swift */,
 			);
 			path = LNApp;
+			sourceTree = "<group>";
+		};
+		94A57F2A210F8FCA00A3CED6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		B45AE188135DE2D65220A742 /* Frameworks */ = {
@@ -246,12 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A57F32210FB30900A3CED6 /* ShippingViewController.swift in Sources */,
 				7A9F6C36210A50AE0094AAE8 /* InvoiceTableViewController.swift in Sources */,
 				7A9F6C122107C8430094AAE8 /* ViewController.swift in Sources */,
 				7A9F6C3A210BA8C40094AAE8 /* codable.swift in Sources */,
 				7A9F6C38210A698E0094AAE8 /* ProductTableViewCell.swift in Sources */,
-				7A9F6C282108FF6A0094AAE8 /* MerchViewControllerCollectionViewController.swift in Sources */,
+				94A57F30210F996C00A3CED6 /* AnotherShoppingViewController.swift in Sources */,
 				7A9F6C102107C8430094AAE8 /* AppDelegate.swift in Sources */,
+				94A57F34210FB73400A3CED6 /* ReceiptViewController.swift in Sources */,
 				7A9F6C2A2109037C0094AAE8 /* ScanViewController.swift in Sources */,
 				7A9F6C34210A4FBD0094AAE8 /* ShoppingViewController.swift in Sources */,
 			);

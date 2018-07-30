@@ -9,7 +9,7 @@
 import UIKit
 
 class ReceiptViewController: UIViewController {
-
+    var tableData:[String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
