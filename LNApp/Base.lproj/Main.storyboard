@@ -398,6 +398,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="7Ke-Jd-6vf"/>
                     <connections>
+                        <outlet property="TotalPrice" destination="ZP2-hO-gta" id="edJ-Yg-fYr"/>
                         <outlet property="invoiceTable" destination="bOy-M8-atl" id="OVs-nP-M5X"/>
                         <outlet property="scrollView" destination="cHU-p3-5CD" id="8R3-dl-WMZ"/>
                     </connections>
@@ -480,15 +481,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Tuv-Rw-7HZ"/>
                     </view>
+                    <connections>
+                        <outlet property="TotalPrice" destination="cjp-WB-XJ4" id="jyu-kc-Xfs"/>
+                        <outlet property="invoiceTable" destination="6vj-mI-oXs" id="lnu-tS-UNX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DD2-L1-WtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3036.2318840579715" y="1984.2391304347827"/>
         </scene>
-        <!--View Controller-->
+        <!--Receipt View Controller-->
         <scene sceneID="gTv-XU-s8r">
             <objects>
-                <viewController storyboardIdentifier="ReceiptView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hbu-9F-7xJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReceiptView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hbu-9F-7xJ" customClass="ReceiptViewController" customModule="LNApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQv-mD-pE7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -584,14 +589,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pm1-cA-uMi">
+                                <rect key="frame" x="176" y="695" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ib-7f-KJK">
+                                <rect key="frame" x="164" y="695" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pIP-Ec-u6v"/>
                     </view>
+                    <connections>
+                        <outlet property="TotalPrice" destination="pm1-cA-uMi" id="vt7-Rl-Hvb"/>
+                        <outlet property="invoiceTable" destination="gd0-3y-Nq4" id="v6o-JZ-vMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCk-QR-8L9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4059" y="1984"/>
+            <point key="canvasLocation" x="4057.971014492754" y="1983.4239130434785"/>
         </scene>
         <!--Item-->
         <scene sceneID="zJw-BH-rj6">

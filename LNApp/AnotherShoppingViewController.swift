@@ -9,7 +9,10 @@
 import UIKit
 
 class AnotherShoppingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var subTotal:Float = 0.000
 
+    @IBOutlet weak var TotalPrice: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var invoiceTable: UITableView!
@@ -34,6 +37,15 @@ class AnotherShoppingViewController: UIViewController, UITableViewDelegate, UITa
             scrollView.addSubview(imageView)
         }
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue , sender: Any?) {
+        if segue.identifier == "toShippingMethod"
+        {
+            if let destinationVC = segue.destination as? ShippingViewController {
+                destinationVC.tableData = table1Data
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -115,7 +127,10 @@ class AnotherShoppingViewController: UIViewController, UITableViewDelegate, UITa
         if(table1Data[row] == "Hoodies") {
             cell.priceField.text = "45.00"
         }
-    
+        
+        subTotal = Float(Float(Float(subTotal) + Float(cell.priceField.text!)!))
+        TotalPrice.text = String(subTotal)
+        
         print("adding cell")
         
         return cell
