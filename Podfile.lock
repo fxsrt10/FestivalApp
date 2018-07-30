@@ -1,16 +1,28 @@
 PODS:
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
   - PushNotifications (0.10.12)
 
 DEPENDENCIES:
+  - Material
   - PushNotifications
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Material
+    - Motion
     - PushNotifications
 
 SPEC CHECKSUMS:
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
   PushNotifications: 1c75fbe833c53f0410de0379d7727a8239a1899a
 
-PODFILE CHECKSUM: cc4027b1b9d618d550b1add1b8bbcfb97da74846
+PODFILE CHECKSUM: f072afc8a402ab58966891c2471fd67216745c76
 
 COCOAPODS: 1.5.3

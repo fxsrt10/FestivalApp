@@ -7,4 +7,5 @@ target 'LNApp' do
 
   # Pods for LNApp
   pod 'PushNotifications'
+  pod 'Material'
 end
