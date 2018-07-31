@@ -65,21 +65,25 @@ class AnotherShoppingViewController: UIViewController, UITableViewDelegate, UITa
     */
     @IBAction func addCDAction(_ sender: Any?) {
         table1Data.append("CD")
+        subTotal = subTotal + 15.99
         reloadTable()
     }
     
     @IBAction func addHoodieAction(_ sender: Any?) {
         table1Data.append("Hoodies")
+        subTotal = subTotal + 45.99
         reloadTable()
     }
     
     @IBAction func addShirtAction(_ sender: Any?) {
         table1Data.append("Shirts")
+        subTotal = subTotal + 15.99
         reloadTable()
     }
     
     @IBAction func addPosterAction(_ sender: Any?) {
         table1Data.append("Poster")
+        subTotal = subTotal + 10.99
         reloadTable()
     }
     @IBAction func addToCart(_ sender: Any) {
@@ -101,11 +105,13 @@ class AnotherShoppingViewController: UIViewController, UITableViewDelegate, UITa
     func reloadTable() {
         
         invoiceTable.beginUpdates()
-        invoiceTable.insertRows(at: [IndexPath(row: table1Data.count-1, section: 0)], with: .automatic)
+        invoiceTable.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
         invoiceTable.endUpdates()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        TotalPrice.text = String(subTotal)
+        
         return table1Data.count
     }
     
@@ -116,25 +122,23 @@ class AnotherShoppingViewController: UIViewController, UITableViewDelegate, UITa
         let row = indexPath.row
         cell.itemField.text = table1Data[row]
         if(table1Data[row] == "CD") {
-            cell.priceField.text = "15.00"
+            cell.priceField.text = "15.99"
         }
-        if(table1Data[row] == "Shirts") {
-            cell.priceField.text = "15.00"
+        else if(table1Data[row] == "Shirts") {
+            cell.priceField.text = "15.99"
         }
-        if(table1Data[row] == "Poster") {
-            cell.priceField.text = "10.00"
+        else if(table1Data[row] == "Poster") {
+            cell.priceField.text = "10.99"
         }
-        if(table1Data[row] == "Hoodies") {
-            cell.priceField.text = "45.00"
+        else if(table1Data[row] == "Hoodies") {
+            cell.priceField.text = "45.99"
         }
-        
-        subTotal = Float(Float(Float(subTotal) + Float(cell.priceField.text!)!))
-        TotalPrice.text = String(subTotal)
         
         print("adding cell")
         
         return cell
     }
+    
     
     func calcTotal() {
         

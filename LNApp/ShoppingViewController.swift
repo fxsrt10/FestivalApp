@@ -40,22 +40,22 @@ class ShoppingViewController: UIViewController, UITableViewDelegate, UITableView
     */
     @IBAction func addCDAction(_ sender: Any) {
         table1Data.append("CD")
-        reloadTable()
+        //reloadTable()
     }
     
     @IBAction func addHoodieAction(_ sender: Any) {
         table1Data.append("Hoodies")
-        reloadTable()
+        //reloadTable()
     }
     
     @IBAction func addShirtAction(_ sender: Any) {
         table1Data.append("Shirts")
-        reloadTable()
+        //reloadTable()
     }
     
     @IBAction func addPosterAction(_ sender: Any) {
         table1Data.append("Poster")
-        reloadTable()
+        //reloadTable()
     }
     
     override func prepare(for segue: UIStoryboardSegue , sender: Any?) {
@@ -85,16 +85,16 @@ class ShoppingViewController: UIViewController, UITableViewDelegate, UITableView
         let row = indexPath.row
         cell.itemField.text = table1Data[row]
         if(table1Data[row] == "CD") {
-            cell.priceField.text = "15.00"
+            cell.priceField.text = "15.99"
         }
         if(table1Data[row] == "Shirts") {
-            cell.priceField.text = "15.00"
+            cell.priceField.text = "15.99"
         }
         if(table1Data[row] == "Poster") {
-            cell.priceField.text = "10.00"
+            cell.priceField.text = "10.99"
         }
         if(table1Data[row] == "Hoodies") {
-            cell.priceField.text = "45.00"
+            cell.priceField.text = "45.99"
         }
     
         print("adding cell")

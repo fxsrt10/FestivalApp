@@ -57,16 +57,16 @@ class ShippingViewController: UIViewController, UITableViewDelegate, UITableView
         let row = indexPath.row
         cell.itemField.text = tableData[row]
         if(tableData[row] == "CD") {
-            cell.priceField.text = "15.00"
+            cell.priceField.text = "15.99"
         }
         if(tableData[row] == "Shirts") {
-            cell.priceField.text = "15.00"
+            cell.priceField.text = "15.99"
         }
         if(tableData[row] == "Poster") {
-            cell.priceField.text = "10.00"
+            cell.priceField.text = "10.99"
         }
         if(tableData[row] == "Hoodies") {
-            cell.priceField.text = "45.00"
+            cell.priceField.text = "45.99"
         }
         
         subTotal = Float(Float(Float(subTotal) + Float(cell.priceField.text!)!))
