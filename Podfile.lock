@@ -1,4 +1,5 @@
 PODS:
+  - CenteredCollectionView (2.0.0)
   - Material (2.16.4):
     - Material/Core (= 2.16.4)
   - Material/Core (2.16.4):
@@ -9,20 +10,23 @@ PODS:
   - PushNotifications (0.10.12)
 
 DEPENDENCIES:
+  - CenteredCollectionView
   - Material
   - PushNotifications
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CenteredCollectionView
     - Material
     - Motion
     - PushNotifications
 
 SPEC CHECKSUMS:
+  CenteredCollectionView: 6548b515645aea6ea89618f4b5ca090191dc8628
   Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
   Motion: 153ba49692997888556c7a95207278a8b1f8be95
   PushNotifications: 1c75fbe833c53f0410de0379d7727a8239a1899a
 
-PODFILE CHECKSUM: f072afc8a402ab58966891c2471fd67216745c76
+PODFILE CHECKSUM: e01c4f4b1fd209a7d160d83bfc6dd585e2d4290a
 
 COCOAPODS: 1.5.3

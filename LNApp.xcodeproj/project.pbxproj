@@ -24,6 +24,7 @@
 		7A9F6C36210A50AE0094AAE8 /* InvoiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C35210A50AE0094AAE8 /* InvoiceTableViewController.swift */; };
 		7A9F6C38210A698E0094AAE8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C37210A698E0094AAE8 /* ProductTableViewCell.swift */; };
 		7A9F6C3A210BA8C40094AAE8 /* codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6C39210BA8C40094AAE8 /* codable.swift */; };
+		943DFA6021110227004EAC10 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943DFA5F21110227004EAC10 /* ProductCollectionViewCell.swift */; };
 		94A57F30210F996C00A3CED6 /* AnotherShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A57F2F210F996C00A3CED6 /* AnotherShoppingViewController.swift */; };
 		94A57F32210FB30900A3CED6 /* ShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A57F31210FB30900A3CED6 /* ShippingViewController.swift */; };
 		94A57F34210FB73400A3CED6 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A57F33210FB73400A3CED6 /* ReceiptViewController.swift */; };
@@ -50,6 +51,7 @@
 		7A9F6C35210A50AE0094AAE8 /* InvoiceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTableViewController.swift; sourceTree = "<group>"; };
 		7A9F6C37210A698E0094AAE8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		7A9F6C39210BA8C40094AAE8 /* codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = codable.swift; sourceTree = "<group>"; };
+		943DFA5F21110227004EAC10 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductCollectionViewCell.swift; path = LNApp/ProductCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		94A57F2F210F996C00A3CED6 /* AnotherShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherShoppingViewController.swift; sourceTree = "<group>"; };
 		94A57F31210FB30900A3CED6 /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
 		94A57F33210FB73400A3CED6 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		7A9F6C0E2107C8430094AAE8 /* LNApp */ = {
 			isa = PBXGroup;
 			children = (
+				943DFA5F21110227004EAC10 /* ProductCollectionViewCell.swift */,
 				94A57F2A210F8FCA00A3CED6 /* Images */,
 				7A9F6C39210BA8C40094AAE8 /* codable.swift */,
 				7A9F6C0F2107C8430094AAE8 /* AppDelegate.swift */,
@@ -238,12 +241,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LNApp/Pods-LNApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CenteredCollectionView/CenteredCollectionView.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CenteredCollectionView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
@@ -262,6 +267,7 @@
 			files = (
 				94A57F32210FB30900A3CED6 /* ShippingViewController.swift in Sources */,
 				7A9F6C36210A50AE0094AAE8 /* InvoiceTableViewController.swift in Sources */,
+				943DFA6021110227004EAC10 /* ProductCollectionViewCell.swift in Sources */,
 				7A9F6C122107C8430094AAE8 /* ViewController.swift in Sources */,
 				7A9F6C3A210BA8C40094AAE8 /* codable.swift in Sources */,
 				7A9F6C38210A698E0094AAE8 /* ProductTableViewCell.swift in Sources */,
